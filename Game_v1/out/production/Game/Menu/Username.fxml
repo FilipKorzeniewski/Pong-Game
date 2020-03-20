@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Menu.Username">
+   <center>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="USERNAME:">
+               <font>
+                  <Font name="Arial Bold" size="22.0" />
+               </font></Label>
+            <TextField fx:id="usernameTextField" minWidth="200.0" onAction="#UsernameEnterClicked" promptText="put here your name">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font></TextField>
+         </children>
+      </HBox>
+   </center>
+   <bottom>
+      <Button fx:id="backButton" cancelButton="true" mnemonicParsing="false" onAction="#backButtonClicked" text="BACK" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+   </bottom>
+   <padding>
+      <Insets bottom="50.0" top="50.0" />
+   </padding>
+   <top>
+      <Label text="Put your username and press enter" BorderPane.alignment="CENTER" />
+   </top>
+</BorderPane>

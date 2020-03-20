@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Menu.Menu">
+   <top>
+      <Label text="MENU" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+   </top>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+   </padding>
+   <center>
+      <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="startGameButton" mnemonicParsing="false" onAction="#StartGameButtonClicked" text="Start Game">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Button>
+            <Separator prefWidth="200.0" visible="false">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Separator>
+            <Button fx:id="highScoreButton" mnemonicParsing="false" onAction="#HighScoreButtonClicked" text="High Score">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Button>
+            <Separator layoutX="10.0" layoutY="167.0" prefWidth="200.0" visible="false">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Separator>
+            <ComboBox fx:id="difficultyComboBox" onAction="#difficultyComboBoxChoose" prefWidth="120.0" promptText="Difficulty" />
+            <Separator layoutX="10.0" layoutY="211.0" prefWidth="200.0" visible="false">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </Separator>
+            <Button fx:id="quitButton" cancelButton="true" layoutX="241.0" layoutY="157.0" mnemonicParsing="false" onAction="#QuitButtonClicked" prefWidth="120.0" text="Quit">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Button>
+         </children></VBox>
+   </center>
+</BorderPane>
